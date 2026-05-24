@@ -2,9 +2,6 @@
 title: Alpha-Beta
 description: A Minimax optimization that prunes branches that cannot affect the final decision.
 ---
-
-## Overview
-
 Alpha-Beta Pruning is an optimization technique for the Minimax
 algorithm that reduces the number of nodes evaluated in the game tree.
 It works by eliminating branches that cannot affect the final decision,

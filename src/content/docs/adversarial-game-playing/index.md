@@ -2,9 +2,6 @@
 title: Adversarial Game Playing
 description: Search techniques for competitive multi-agent games and decision making.
 ---
-
-## Overview
-
 Adversarial Game Playing is a branch of AI where multiple agents compete against each other, usually in turn-based
 environments such as chess, tic-tac-toe, or checkers. One player’s gain becomes the other player’s loss, making these
 problems zero-sum games. The objective is to choose moves that maximize the agent’s chances of winning while minimizing

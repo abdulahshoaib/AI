@@ -2,9 +2,6 @@
 title: A* Algorithm
 description: A heuristic search algorithm that balances path cost and estimated remaining cost.
 ---
-
-## Overview
-
 The A* algorithm is an informed search algorithm that finds the shortest or
 lowest-cost path between a start node and a goal node by combining actual path cost and heuristic estimation.
 

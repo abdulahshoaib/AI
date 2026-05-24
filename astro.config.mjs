@@ -17,7 +17,7 @@ export default defineConfig({
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/abdulahshoaib/AI-Lab' }],
 			sidebar: [
 				{
-					label: 'Artificial Intelligence',
+					label: 'Search Algorithms',
 					items: [
 						{
 							label: 'Informed Search',
@@ -33,9 +33,14 @@ export default defineConfig({
 							items: [
 								{ label: 'Overview', slug: 'adversarial-game-playing' },
 								{ label: 'Minimax', slug: 'adversarial-game-playing/minimax' },
-								{ label: 'Alpha-Beta', slug: 'adversarial-game-playing/alpha-beta' },
+								{ label: 'Alpha-Beta Pruning', slug: 'adversarial-game-playing/alpha-beta' },
 							],
 						},
+					],
+				},
+				{
+					label: 'Evolutionary Algorithms',
+					items: [
 						{
 							label: 'Genetic Algorithms',
 							items: [
@@ -54,14 +59,33 @@ export default defineConfig({
 				{
 					label: 'Machine Learning',
 					items: [
-						{ label: 'Regression and Classification', slug: 'regression-and-classification' },
-						{ label: 'Single Layer Perceptron', slug: 'single-layer-perceptron' },
-						{ label: 'Deep Learning and Regularization Techniques', slug: 'deep-learning-and-regularization-techniques' },
+						{
+							label: 'Supervised Learning',
+							items: [
+								{ label: 'Regression', slug: 'supervised-learning/regression' },
+								{ label: 'Classification', slug: 'supervised-learning/classification' },
+							],
+						},
+						{
+							label: 'Artificial Neural Networks',
+							items: [
+								{ label: 'Single Layer Perceptron', slug: 'single-layer-perceptron' },
+								{ label: 'Deep Learning Basics', slug: 'artificial-neural-networks/deep-learning-basics' },
+							],
+						},
+						{
+							label: 'Convolutional Neural Networks',
+							items: [
+								{ label: 'Regularization Techniques', slug: 'convolutional-neural-networks/regularization-techniques' },
+							],
+						},
 						{
 							label: 'Unsupervised Learning',
 							items: [
 								{ label: 'Overview', slug: 'unsupervised-learning' },
 								{ label: 'K-Means Clustering', slug: 'unsupervised-learning/k-means-clustering' },
+								{ label: 'K-Medoids Clustering', slug: 'unsupervised-learning/k-medoids-clustering' },
+								{ label: 'Hierarchical Clustering', slug: 'unsupervised-learning/hierarchical-clustering' },
 							],
 						},
 					],
@@ -69,18 +93,9 @@ export default defineConfig({
 				{
 					label: 'Evaluation Metrics',
 					items: [
-						{
-							label: 'Regression',
-							items: [
-								{ label: 'Overview', slug: 'evaluation-metrics/regression' },
-							],
-						},
-						{
-							label: 'Classification',
-							items: [
-								{ label: 'Overview', slug: 'evaluation-metrics/classification' },
-							],
-						},
+						{ label: 'Overview', slug: 'evaluation-metrics' },
+						{ label: 'Regression Metrics', slug: 'evaluation-metrics/regression' },
+						{ label: 'Classification Metrics', slug: 'evaluation-metrics/classification' },
 					],
 				},
 			],

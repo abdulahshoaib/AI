@@ -2,9 +2,6 @@
 title: Hill Climbing
 description: A local search algorithm that repeatedly moves toward better neighboring states.
 ---
-
-## Overview
-
 Hill Climbing is an informed search algorithm that continuously moves toward the neighboring state with the best heuristic value in order to reach an optimal solution.
 It starts from an initial state and repeatedly selects the neighbor that appears closer to the goal.
 

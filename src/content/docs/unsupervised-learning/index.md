@@ -2,9 +2,6 @@
 title: Unsupervised Learning
 description: Learning patterns, groups, and structure from unlabeled datasets.
 ---
-
-## Overview
-
 Unsupervised learning is a machine learning technique where models work with unlabeled data to discover hidden patterns, structures, or relationships without human supervision.
 
 Unlike supervised learning, there are no predefined outputs or labels. The model independently analyzes the data to identify similarities, trends, or groupings.

@@ -2,9 +2,6 @@
 title: Single Layer Perceptron
 description: Understanding perceptrons, activation functions, logic gates, TensorFlow, PyTorch, and implementing a single-layer neural network for binary classification.
 ---
-
-## Overview
-
 A perceptron is one of the fundamental building blocks of artificial neural networks. It is designed to process input data, apply weights and bias values, and generate predictions for classification problems.
 
 Perceptrons are primarily used for supervised learning and binary classification tasks where outputs are represented as two possible classes such as:

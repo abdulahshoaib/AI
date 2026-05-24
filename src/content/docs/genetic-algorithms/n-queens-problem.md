@@ -2,9 +2,6 @@
 title: N Queens Problem
 description: Solving the N Queens constraint problem using genetic algorithm operators.
 ---
-
-## Overview
-
 The N Queens Problem is a constraint satisfaction problem where the goal is to place `N` queens on an `N × N` chessboard so that no two queens attack each other. In a Genetic Algorithm, each board arrangement is treated as an individual solution, and the algorithm improves these solutions over multiple generations using fitness, selection, crossover, and mutation.
 
 ### State Representation

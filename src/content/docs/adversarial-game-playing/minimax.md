@@ -2,9 +2,6 @@
 title: Minimax
 description: A decision algorithm for choosing optimal moves in two-player zero-sum games.
 ---
-
-## Overview
-
 Minimax is an adversarial search algorithm used in two-player zero-sum games where one player
 tries to maximize the score while the opponent tries to minimize it. The algorithm explores
 possible future moves in a game tree, assuming both players make optimal decisions. The maximizing

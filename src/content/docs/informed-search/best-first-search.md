@@ -2,9 +2,6 @@
 title: Best First Search
 description: A heuristic search strategy that expands the most promising node first.
 ---
-
-## Overview
-
 Best-first search is an informed search algorithm that expands the node that
 appears most promising according to a heuristic function. Unlike A*, it
 usually depends mainly on $h(n)$, the estimated distance from the current node

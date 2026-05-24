@@ -2,9 +2,6 @@
 title: Informed Search
 description: Heuristic search strategies for finding efficient paths through state spaces.
 ---
-
-## Overview
-
 Informed search algorithms (also called heuristic search algorithms) are search techniques
 that use additional problem-specific knowledge to guide the search toward the goal more efficiently.
 

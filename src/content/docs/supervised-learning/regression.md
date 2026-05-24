@@ -1,10 +1,7 @@
 ---
-title: Regression and Classification
-description: Understanding supervised learning, classification, regression, and machine learning workflows using Python and Scikit-learn.
+title: Regression
+description: Supervised learning for predicting continuous numerical values.
 ---
-
-## Overview
-
 Machine Learning (ML) is a field of computer science where systems learn patterns from data and make predictions or decisions automatically without explicitly programmed rules.
 
 Traditional programming follows:
@@ -101,7 +98,7 @@ The process of evaluating the model on unseen data.
 
 ## Categories of Supervised Learning
 
-### Regression
+## Regression
 
 Regression is used when the target variable is continuous.
 
@@ -115,19 +112,6 @@ Examples:
 - Linear Regression
 - Decision Tree Regression
 
-### Classification
-
-Classification is used when the target belongs to categories or classes.
-
-Examples:
-- Spam detection
-- Disease prediction
-- Animal image classification
-
-#### Common Classification Algorithms
-
-- Logistic Regression
-- K-Nearest Neighbors (KNN)
 
 ## What is Scikit-learn?
 
@@ -232,126 +216,6 @@ Ensures reproducible dataset splits.
 
 ```python
 random_state=42
-```
-
-## Classification Example
-
-The classification example uses the Iris dataset.
-
-## Import Libraries
-
-```python
-import numpy as np
-import pandas as pd
-
-from sklearn.datasets import load_iris
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import StandardScaler
-from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import (
-    accuracy_score,
-    confusion_matrix,
-    classification_report
-)
-```
-
-## Load Dataset
-
-```python
-iris = load_iris()
-
-X = iris.data
-y = iris.target
-
-print(X.shape)
-print(y.shape)
-```
-
-## Split Dataset
-
-```python
-X_train, X_test, y_train, y_test = train_test_split(
-    X,
-    y,
-    test_size=0.2,
-    random_state=42
-)
-```
-
-## Feature Scaling
-
-Feature scaling standardizes numerical values so all features contribute equally.
-
-```python
-scaler = StandardScaler()
-
-X_train = scaler.fit_transform(X_train)
-X_test = scaler.transform(X_test)
-```
-
-## Train Logistic Regression Model
-
-```python
-model = LogisticRegression()
-
-model.fit(X_train, y_train)
-```
-
-The classifier learns decision boundaries that separate classes.
-
-## Make Predictions
-
-```python
-y_pred = model.predict(X_test)
-```
-
-## Evaluate Classification Model
-
-### Accuracy
-
-Measures prediction correctness.
-
-```python
-accuracy = accuracy_score(y_test, y_pred)
-
-print("Accuracy:", accuracy)
-```
-
-### Confusion Matrix
-
-Displays prediction distribution across classes.
-
-```python
-cm = confusion_matrix(y_test, y_pred)
-
-print(cm)
-```
-
-### Classification Report
-
-Provides:
-- Precision
-- Recall
-- F1-score
-
-```python
-print(classification_report(y_test, y_pred))
-```
-
-## K-Nearest Neighbors (KNN)
-
-Another classifier demonstrated is KNN.
-
-```python
-from sklearn.neighbors import KNeighborsClassifier
-
-knn = KNeighborsClassifier(n_neighbors=5)
-
-knn.fit(X_train, y_train)
-
-y_pred_knn = knn.predict(X_test)
-
-print("KNN Accuracy:", accuracy_score(y_test, y_pred_knn))
 ```
 
 ## Regression Example
@@ -481,8 +345,6 @@ print(
 
 ## Tutorials
 
-### Part 1
-
 <div style="position:relative;padding-bottom:56.25%;height:0;">
   <iframe
     style="position:absolute;top:0;left:0;width:100%;height:100%;"
@@ -495,16 +357,3 @@ print(
   </iframe>
 </div>
 
-### Part 2
-
-<div style="position:relative;padding-bottom:56.25%;height:0;">
-  <iframe
-    style="position:absolute;top:0;left:0;width:100%;height:100%;"
-    src="https://www.youtube.com/embed/Hp2ZS4HNfJY?si=g0sEueN25Cl1nR7P"
-    title="Part 2"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    referrerpolicy="strict-origin-when-cross-origin"
-    allowfullscreen>
-  </iframe>
-</div>

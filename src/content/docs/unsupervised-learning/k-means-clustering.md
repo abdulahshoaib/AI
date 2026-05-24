@@ -2,11 +2,6 @@
 title: K-Means Clustering
 description: A centroid-based clustering algorithm for partitioning unlabeled data.
 ---
-
-# K-Means Clustering
-
-## Overview
-
 K-Means is an unsupervised learning algorithm used to divide data into `k` clusters.
 
 Each cluster is represented by a centroid. A centroid is the mean position of all data points assigned to that cluster.

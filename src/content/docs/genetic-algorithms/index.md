@@ -2,9 +2,6 @@
 title: Genetic Algorithms
 description: Optimization methods based on selection, crossover, mutation, and population fitness.
 ---
-
-## Overview
-
 A Genetic Algorithm (GA) is an optimization and search technique inspired by natural evolution.
 It works by creating a population of possible solutions, evaluating their fitness, and repeatedly
 applying selection, crossover, and mutation to generate better solutions over generations.
