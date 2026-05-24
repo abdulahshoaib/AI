@@ -3,7 +3,7 @@ title: Deep Learning and Regularization Techniques
 description: Concepts and implementations of neural networks, regularization methods, and convolutional neural networks using TensorFlow and Python.
 ---
 
-# Overview
+## Overview
 
 This module focuses on advanced machine learning and deep learning concepts used to improve model performance,
 reduce overfitting, and build image-processing neural networks. It covers model evaluation techniques, regularization
@@ -11,66 +11,45 @@ strategies, learning curves, cross-validation, early stopping, dropout, and Conv
 
 The implementation examples use Python with TensorFlow, NumPy, and Matplotlib.
 
-# Topics to Cover
-
-- Underfitting
-- Overfitting
-- Learning Curves
-- Training vs Validation Accuracy
-- Training vs Validation Loss
-- K-Fold Cross Validation
-- Early Stopping
-- Dropout Regularization
-- Model Generalization
-- Hyperparameter Tuning
-- Convolutional Neural Networks (CNNs)
-- Convolution Layers
-- Pooling Layers
-- ReLU Activation Function
-- Flatten Layer
-- Fully Connected Layers
-- Image Classification
-- TensorFlow Deep Learning Workflow
-
-# Introduction to Model Training Problems
+## Introduction to Model Training Problems
 
 Machine learning models must not only perform well on training data but also generalize effectively to unseen data.
 
 Two major problems commonly occur during training:
 
-## Underfitting
+### Underfitting
 
 Underfitting happens when a model is too simple to learn the underlying patterns in data.
 
-### Characteristics
+#### Characteristics
 
 - Low training accuracy
 - Low validation accuracy
 - Poor learning capability
 
-### Common Causes
+#### Common Causes
 
 - Insufficient training
 - Simple model architecture
 - Poor feature selection
 
-## Overfitting
+### Overfitting
 
 Overfitting occurs when a model memorizes training data instead of learning meaningful patterns.
 
-### Characteristics
+#### Characteristics
 
 - Very high training accuracy
 - Poor validation accuracy
 - Weak generalization
 
-### Common Causes
+#### Common Causes
 
 - Excessively complex models
 - Too many parameters
 - Small datasets
 
-# Learning Curves
+## Learning Curves
 
 Learning curves visualize model performance during training.
 
@@ -87,7 +66,7 @@ These curves help identify whether a model is:
 - Properly fitted
 - Overfitting
 
-## Interpretation
+### Interpretation
 
 | Scenario | Training Error | Validation Error | Meaning |
 |---|---|---|---|
@@ -95,21 +74,21 @@ These curves help identify whether a model is:
 | Good Fit | Low | Low | Ideal model |
 | Overfitting | Low | High | Model too complex |
 
-# Regularization Techniques
+## Regularization Techniques
 
 Regularization methods help reduce overfitting and improve generalization.
 
-## Early Stopping
+### Early Stopping
 
 Early stopping halts training when validation performance stops improving.
 
-### Purpose
+#### Purpose
 
 - Prevent overfitting
 - Save computation time
 - Improve generalization
 
-### TensorFlow Callback Example
+#### TensorFlow Callback Example
 
 ```python
 tf.keras.callbacks.EarlyStopping(
@@ -118,27 +97,27 @@ tf.keras.callbacks.EarlyStopping(
 )
 ```
 
-## Dropout
+### Dropout
 
 Dropout randomly disables neurons during training.
 
-### Benefits
+#### Benefits
 
 - Prevents neuron dependency
 - Reduces overfitting
 - Improves robustness
 
-### Example
+#### Example
 
 ```python
 tf.keras.layers.Dropout(0.5)
 ```
 
-# K-Fold Cross Validation
+## K-Fold Cross Validation
 
 K-Fold Cross Validation evaluates model performance by splitting data into multiple subsets.
 
-## Process
+### Process
 
 1. Divide dataset into K equal parts
 2. Use one fold for validation
@@ -146,13 +125,13 @@ K-Fold Cross Validation evaluates model performance by splitting data into multi
 4. Repeat for all folds
 5. Average the results
 
-## Advantages
+### Advantages
 
 - Better model evaluation
 - More reliable performance estimates
 - Efficient use of limited data
 
-# Neural Network Training Workflow
+## Neural Network Training Workflow
 
 The deep learning workflow generally includes:
 
@@ -164,7 +143,7 @@ The deep learning workflow generally includes:
 6. Evaluation
 7. Visualization of results
 
-# TensorFlow Libraries Used
+## TensorFlow Libraries Used
 
 ```python
 import tensorflow as tf
@@ -172,11 +151,11 @@ import numpy as np
 import matplotlib.pyplot as plt
 ```
 
-# Building Neural Network Models
+## Building Neural Network Models
 
 A neural network is constructed using stacked layers.
 
-## Example Sequential Model
+### Example Sequential Model
 
 ```python
 model = tf.keras.Sequential([
@@ -186,7 +165,7 @@ model = tf.keras.Sequential([
 ])
 ```
 
-# Model Compilation
+## Model Compilation
 
 Compilation defines:
 
@@ -194,7 +173,7 @@ Compilation defines:
 - Loss function
 - Metrics
 
-## Example
+### Example
 
 ```python
 model.compile(
@@ -204,11 +183,11 @@ model.compile(
 )
 ```
 
-# Model Training
+## Model Training
 
 Training adjusts model weights using data.
 
-## Example
+### Example
 
 ```python
 history = model.fit(
@@ -220,11 +199,11 @@ history = model.fit(
 )
 ```
 
-# Visualization of Accuracy and Loss
+## Visualization of Accuracy and Loss
 
 Matplotlib is used to visualize learning curves.
 
-## Example
+### Example
 
 ```python
 plt.plot(train_loss, label='Training Loss')
@@ -233,7 +212,7 @@ plt.legend()
 plt.show()
 ```
 
-# Convolutional Neural Networks (CNNs)
+## Convolutional Neural Networks (CNNs)
 
 CNNs are deep learning models specialized for image processing and computer vision tasks.
 
@@ -244,22 +223,22 @@ They automatically learn visual features such as:
 - Shapes
 - Patterns
 
-## Applications
+### Applications
 
 - Image classification
 - Face recognition
 - Object detection
 - Medical imaging
 
-# CNN Architecture
+## CNN Architecture
 
 A CNN consists of several layers working together.
 
-## Input Layer
+### Input Layer
 
 Defines image dimensions.
 
-### Example
+#### Example
 
 ```python
 tf.keras.Input(shape=(28, 28, 1))
@@ -271,17 +250,17 @@ Where:
 - 28 = width
 - 1 = grayscale channel
 
-# Convolution Layer
+## Convolution Layer
 
 The convolution layer applies filters to detect patterns.
 
-## Mathematical Representation
+### Mathematical Representation
 
 ```text
 Feature Map = Input * Kernel
 ```
 
-## Example
+### Example
 
 ```python
 tf.keras.layers.Conv2D(
@@ -291,38 +270,38 @@ tf.keras.layers.Conv2D(
 )
 ```
 
-### Parameters
+#### Parameters
 
 - 32 filters
 - 3×3 kernel size
 - ReLU activation
 
-# Activation Function (ReLU)
+## Activation Function (ReLU)
 
 ReLU introduces non-linearity into the network.
 
-## Formula
+### Formula
 
 ```text
 f(x) = max(0, x)
 ```
 
-## Purpose
+### Purpose
 
 - Faster training
 - Reduced vanishing gradient problem
 - Better feature learning
 
-# Pooling Layer
+## Pooling Layer
 
 Pooling reduces spatial dimensions and computation.
 
-## Types
+### Types
 
 - Max Pooling
 - Average Pooling
 
-## Example
+### Example
 
 ```python
 tf.keras.layers.MaxPooling2D((2,2))
@@ -330,27 +309,27 @@ tf.keras.layers.MaxPooling2D((2,2))
 
 A 2×2 pooling window reduces dimensions by half.
 
-# Flatten Layer
+## Flatten Layer
 
 The flatten layer converts multidimensional feature maps into a 1D vector.
 
-## Example
+### Example
 
 ```python
 tf.keras.layers.Flatten()
 ```
 
-# Fully Connected Layer
+## Fully Connected Layer
 
 Dense layers perform final classification using extracted features.
 
-## Example
+### Example
 
 ```python
 tf.keras.layers.Dense(128, activation='relu')
 ```
 
-# CNN Model Example
+## CNN Model Example
 
 ```python
 model = tf.keras.Sequential([
@@ -362,7 +341,7 @@ model = tf.keras.Sequential([
 ])
 ```
 
-# Model Evaluation
+## Model Evaluation
 
 Model performance is evaluated using:
 
@@ -375,24 +354,3 @@ These metrics help determine:
 - Model quality
 - Generalization capability
 - Overfitting behavior
-
-# Practical Skills Covered
-
-- Building neural networks using TensorFlow
-- Training deep learning models
-- Detecting overfitting and underfitting
-- Applying regularization techniques
-- Implementing CNNs for image data
-- Visualizing model performance
-- Improving generalization accuracy
-
-# Technologies and Libraries
-
-- Python
-- TensorFlow
-- NumPy
-- Matplotlib
-
-# Conclusion
-
-Deep learning models require proper evaluation and regularization to perform effectively on unseen data. Techniques such as learning curves, dropout, early stopping, and cross-validation help improve model reliability. Convolutional Neural Networks further extend deep learning capabilities for image-related tasks by automatically extracting spatial features and patterns.
