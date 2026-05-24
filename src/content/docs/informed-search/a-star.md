@@ -1,6 +1,6 @@
 ---
 title: A* Algorithm
-description: Upload notes and examples for the A* search algorithm.
+description: A heuristic search algorithm that balances path cost and estimated remaining cost.
 ---
 
 ## Overview

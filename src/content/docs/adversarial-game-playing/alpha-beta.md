@@ -1,6 +1,6 @@
 ---
 title: Alpha-Beta
-description: Upload notes and examples for alpha-beta pruning.
+description: A Minimax optimization that prunes branches that cannot affect the final decision.
 ---
 
 ## Overview

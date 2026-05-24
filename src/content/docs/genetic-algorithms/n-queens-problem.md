@@ -1,6 +1,6 @@
 ---
 title: N Queens Problem
-description: Upload notes and examples for solving the N Queens problem with genetic algorithms.
+description: Solving the N Queens constraint problem using genetic algorithm operators.
 ---
 
 ## Overview

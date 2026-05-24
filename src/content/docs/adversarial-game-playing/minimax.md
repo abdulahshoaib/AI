@@ -1,6 +1,6 @@
 ---
 title: Minimax
-description: Upload notes and examples for the Minimax algorithm.
+description: A decision algorithm for choosing optimal moves in two-player zero-sum games.
 ---
 
 ## Overview

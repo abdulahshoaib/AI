@@ -1,6 +1,6 @@
 ---
 title: Best First Search
-description: Upload notes and examples for Best First Search.
+description: A heuristic search strategy that expands the most promising node first.
 ---
 
 ## Overview

@@ -1,6 +1,6 @@
 ---
 title: Informed Search
-description: Upload notes for informed search algorithms.
+description: Heuristic search strategies for finding efficient paths through state spaces.
 ---
 
 ## Overview

@@ -1,6 +1,6 @@
 ---
 title: Hill Climbing
-description: Upload notes and examples for Hill Climbing.
+description: A local search algorithm that repeatedly moves toward better neighboring states.
 ---
 
 ## Overview

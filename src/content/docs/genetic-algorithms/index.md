@@ -1,6 +1,6 @@
 ---
 title: Genetic Algorithms
-description: Upload notes for genetic algorithms.
+description: Optimization methods based on selection, crossover, mutation, and population fitness.
 ---
 
 ## Overview

@@ -1,6 +1,6 @@
 ---
 title: Adversarial Game Playing
-description: Upload notes for adversarial game playing algorithms.
+description: Search techniques for competitive multi-agent games and decision making.
 ---
 
 ## Overview
@@ -15,4 +15,3 @@ future game states to determine the optimal move.
 
 - [Minimax](./minimax/)
 - [Alpha-Beta](./alpha-beta/)
-

@@ -73,23 +73,12 @@ export default defineConfig({
 							label: 'Regression',
 							items: [
 								{ label: 'Overview', slug: 'evaluation-metrics/regression' },
-								{ label: 'Mean Absolute Error (MAE)', slug: 'evaluation-metrics/regression/mean-absolute-error' },
-								{ label: 'Mean Squared Error (MSE)', slug: 'evaluation-metrics/regression/mean-squared-error' },
-								{ label: 'Root Mean Squared Error (RMSE)', slug: 'evaluation-metrics/regression/root-mean-squared-error' },
-								{ label: 'R-squared (R2) Score', slug: 'evaluation-metrics/regression/r-squared-score' },
 							],
 						},
 						{
 							label: 'Classification',
 							items: [
 								{ label: 'Overview', slug: 'evaluation-metrics/classification' },
-								{ label: 'Confusion Matrix', slug: 'evaluation-metrics/classification/confusion-matrix' },
-								{ label: 'Accuracy', slug: 'evaluation-metrics/classification/accuracy' },
-								{ label: 'Precision', slug: 'evaluation-metrics/classification/precision' },
-								{ label: 'Recall', slug: 'evaluation-metrics/classification/recall' },
-								{ label: 'F1 Score', slug: 'evaluation-metrics/classification/f1-score' },
-								{ label: 'AUC and ROC Curve', slug: 'evaluation-metrics/classification/auc-and-roc-curve' },
-								{ label: 'Classification Report', slug: 'evaluation-metrics/classification/classification-report' },
 							],
 						},
 					],
