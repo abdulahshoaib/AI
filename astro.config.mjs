@@ -17,13 +17,6 @@ export default defineConfig({
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/abdulahshoaib/AI-Lab' }],
 			sidebar: [
 				{
-					label: 'Data Preparation',
-					items: [
-						{ label: 'Data Preprocessing', slug: 'data-preprocessing' },
-						{ label: 'Feature Scaling and Encoding', slug: 'feature-scaling-and-encoding' },
-					],
-				},
-				{
 					label: 'Artificial Intelligence',
 					items: [
 						{
@@ -50,6 +43,13 @@ export default defineConfig({
 								{ label: 'N Queens Problem', slug: 'genetic-algorithms/n-queens-problem' },
 							],
 						},
+					],
+				},
+				{
+					label: 'Data Preparation',
+					items: [
+						{ label: 'Data Preprocessing', slug: 'data-preprocessing' },
+						{ label: 'Feature Scaling and Encoding', slug: 'feature-scaling-and-encoding' },
 					],
 				},
 				{
