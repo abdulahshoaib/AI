@@ -55,8 +55,8 @@ export default defineConfig({
 					label: 'Machine Learning',
 					items: [
 						{ label: 'Regression and Classification', slug: 'regression-and-classification' },
-						{ label: 'Perceptron, Logic Gates, Prediction', slug: 'perceptron-logic-gates-prediction' },
-						{ label: 'CNN', slug: 'cnn' },
+						{ label: 'Single Layer Perceptron', slug: 'single-layer-perceptron' },
+						{ label: 'Deep Learning and Regularization Techniques', slug: 'deep-learning-and-regularization-techniques' },
 						{
 							label: 'Unsupervised Learning',
 							items: [
