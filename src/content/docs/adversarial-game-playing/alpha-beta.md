@@ -61,3 +61,111 @@ Good move ordering increases pruning efficiency and reduces the number of evalua
 | Speed | Slower | Faster |
 | Final Result | Optimal | Same optimal result |
 | Pruning | No | Yes |
+
+## Implementation
+### Pseudocode
+```text
+ALPHA-BETA(node, depth, alpha, beta, isMaxPlayer)
+
+    IF node is terminal OR depth = 0
+        RETURN utility(node)
+
+    IF isMaxPlayer = TRUE
+
+        value ← -∞
+
+        FOR each child of node
+
+            value ← MAX(value,
+                        ALPHA-BETA(child, depth - 1,
+                                   alpha, beta, FALSE))
+
+            alpha ← MAX(alpha, value)
+
+            IF alpha ≥ beta
+                BREAK
+
+        RETURN value
+
+    ELSE
+
+        value ← +∞
+
+        FOR each child of node
+
+            value ← MIN(value,
+                        ALPHA-BETA(child, depth - 1,
+                                   alpha, beta, TRUE))
+
+            beta ← MIN(beta, value)
+
+            IF alpha ≥ beta
+                BREAK
+
+        RETURN value
+```
+
+## Python
+
+```python
+def alpha_beta(node, depth, alpha, beta, is_max_player):
+
+    if depth == 0 or isinstance(node, int):
+        return node
+
+    if is_max_player:
+        value = float("-inf")
+
+        for child in node:
+            value = max(
+                value,
+                alpha_beta(child, depth - 1,
+                           alpha, beta, False)
+            )
+
+            alpha = max(alpha, value)
+
+            if alpha >= beta:
+                break
+
+        return value
+
+    else:
+        value = float("inf")
+
+        for child in node:
+            value = min(
+                value,
+                alpha_beta(child, depth - 1,
+                           alpha, beta, True)
+            )
+
+            beta = min(beta, value)
+
+            if alpha >= beta:
+                break
+
+        return value
+
+
+game_tree = [
+    [3, 5],
+    [2, 9]
+]
+
+result = alpha_beta(
+    game_tree,
+    2,
+    float("-inf"),
+    float("inf"),
+    True
+)
+
+print("Best value:", result)
+```
+
+output
+
+```text
+Best value: 3
+```
