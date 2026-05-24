@@ -1,24 +1,99 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
 
 // https://astro.build/config
 export default defineConfig({
+	markdown: {
+		remarkPlugins: [remarkMath],
+		rehypePlugins: [rehypeKatex],
+	},
 	integrations: [
 		starlight({
-			title: 'My Docs',
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
+			title: 'Artificial Intelligence',
+			customCss: ['./src/styles/katex.css'],
+			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/abdulahshoaib/AI-Lab' }],
 			sidebar: [
 				{
-					label: 'Guides',
+					label: 'Data Preparation',
 					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
+						{ label: 'Data Preprocessing', slug: 'data-preprocessing' },
+						{ label: 'Feature Scaling and Encoding', slug: 'feature-scaling-and-encoding' },
 					],
 				},
 				{
-					label: 'Reference',
-					items: [{ autogenerate: { directory: 'reference' } }],
+					label: 'Artificial Intelligence',
+					items: [
+						{
+							label: 'Informed Search',
+							items: [
+								{ label: 'Overview', slug: 'informed-search' },
+								{ label: 'A* Algorithm', slug: 'informed-search/a-star' },
+								{ label: 'Best First Search', slug: 'informed-search/best-first-search' },
+								{ label: 'Hill Climbing', slug: 'informed-search/hill-climbing' },
+							],
+						},
+						{
+							label: 'Adversarial Game Playing',
+							items: [
+								{ label: 'Overview', slug: 'adversarial-game-playing' },
+								{ label: 'Minimax', slug: 'adversarial-game-playing/minimax' },
+								{ label: 'Alpha-Beta', slug: 'adversarial-game-playing/alpha-beta' },
+							],
+						},
+						{
+							label: 'Genetic Algorithms',
+							items: [
+								{ label: 'Overview', slug: 'genetic-algorithms' },
+								{ label: 'N Queens Problem', slug: 'genetic-algorithms/n-queens-problem' },
+							],
+						},
+					],
+				},
+				{
+					label: 'Machine Learning',
+					items: [
+						{ label: 'Regression and Classification', slug: 'regression-and-classification' },
+						{ label: 'Perceptron, Logic Gates, Prediction', slug: 'perceptron-logic-gates-prediction' },
+						{ label: 'CNN', slug: 'cnn' },
+						{
+							label: 'Unsupervised Learning',
+							items: [
+								{ label: 'Overview', slug: 'unsupervised-learning' },
+								{ label: 'K-Means Clustering', slug: 'unsupervised-learning/k-means-clustering' },
+							],
+						},
+					],
+				},
+				{
+					label: 'Evaluation Metrics',
+					items: [
+						{
+							label: 'Regression',
+							items: [
+								{ label: 'Overview', slug: 'evaluation-metrics/regression' },
+								{ label: 'Mean Absolute Error (MAE)', slug: 'evaluation-metrics/regression/mean-absolute-error' },
+								{ label: 'Mean Squared Error (MSE)', slug: 'evaluation-metrics/regression/mean-squared-error' },
+								{ label: 'Root Mean Squared Error (RMSE)', slug: 'evaluation-metrics/regression/root-mean-squared-error' },
+								{ label: 'R-squared (R2) Score', slug: 'evaluation-metrics/regression/r-squared-score' },
+							],
+						},
+						{
+							label: 'Classification',
+							items: [
+								{ label: 'Overview', slug: 'evaluation-metrics/classification' },
+								{ label: 'Confusion Matrix', slug: 'evaluation-metrics/classification/confusion-matrix' },
+								{ label: 'Accuracy', slug: 'evaluation-metrics/classification/accuracy' },
+								{ label: 'Precision', slug: 'evaluation-metrics/classification/precision' },
+								{ label: 'Recall', slug: 'evaluation-metrics/classification/recall' },
+								{ label: 'F1 Score', slug: 'evaluation-metrics/classification/f1-score' },
+								{ label: 'AUC and ROC Curve', slug: 'evaluation-metrics/classification/auc-and-roc-curve' },
+								{ label: 'Classification Report', slug: 'evaluation-metrics/classification/classification-report' },
+							],
+						},
+					],
 				},
 			],
 		}),
