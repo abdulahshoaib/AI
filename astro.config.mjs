@@ -49,7 +49,6 @@ export default defineConfig({
 					label: 'Data Preparation',
 					items: [
 						{ label: 'Data Preprocessing', slug: 'data-preprocessing' },
-						{ label: 'Feature Scaling and Encoding', slug: 'feature-scaling-and-encoding' },
 					],
 				},
 				{

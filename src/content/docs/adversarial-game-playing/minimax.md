@@ -136,3 +136,16 @@ output:
 ```text
 Best value for Max: 3
 ```
+
+## Tutorial
+
+<div style="position:relative;padding-bottom:56.25%;height:0;">
+    <iframe
+        style="position:absolute;top:0;left:0;width:100%;height:100%;"
+        src="https://www.youtube.com/embed/l-hh51ncgDI?si=0GX7nGTqeH75o8k_"
+        title="Mini Max"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+        gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+    </iframe>
+</div>

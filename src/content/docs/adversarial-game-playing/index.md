@@ -15,3 +15,4 @@ future game states to determine the optimal move.
 
 - [Minimax](./minimax/)
 - [Alpha-Beta](./alpha-beta/)
+
